@@ -1,0 +1,17 @@
+text-align:
+left	把文本排列到左边。默认值：由浏览器决定。
+right	把文本排列到右边。
+center	把文本排列到中间。
+justify	实现两端对齐文本效果。
+inherit	规定应该从父元素继承 text-align 属性的值。
+
+style:
+width:宽度
+
+属性	           描述	                            CSS
+height	设置元素的高度	          1
+max-height	设置元素的最大高度	2
+max-width	设置元素的最大宽度	2
+min-height	设置元素的最小高度	2
+min-width	设置元素的最小宽度	2
+width	          设置元素的宽度
