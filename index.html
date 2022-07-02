@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试页面</title>
+    <!--
+        用'display'给盒子定义'flex'
+        'border'是边界标签
+        用 'flex-direction'给'flex”定义'column（竖向）'属性
+        'flex: 1;'使盒子占满全屏
+        'background-image: linear-gradient'渐变色
+    -->
+    <style>
+        body {
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: column;
+    /*盒子内排列方向*/
+    /*'column'为竖向排列*/
+    background-color: aqua;
+    background-position: 100% 0;
+    animation: bodySize 3s infinite ease-in-out alternate;
+    /*盒子背景颜色*/
+    flex: 1;
+}
+
+a {
+    color: white;
+    /*内容颜色*/
+    text-decoration: none;
+    /*去除'a'标签内容的下划线*/
+    
+}
+
+@keyframes bgSize {
+    0% {
+        background-size: 300% 100%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes bgposition {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes bodySize {
+    0% {
+        background-color: #00ff84;
+    }
+
+    100% {
+        background-color: rgb(0, 60, 255);
+    }
+}
+
+.d2 {
+    background-color: rgba(0, 0, 0, 0.0);
+    /*背景颜色*/
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: row;
+    /*盒子内排列方向*/
+    /*'row'为横向*/
+    height: 1000px;
+    /*盒子高度*/
+    margin-bottom: 10px;
+    /*下边距*/
+   
+}
+
+.d21 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色渐变*/
+    width: 20%;
+    /*盒子宽度*/
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: column;
+    /*盒子内排列方向*/
+    /*'column'为竖向排列*/
+    text-align: center;
+    font-size: 30px;
+}
+
+.d211,
+.d212,
+.d213 {
+    margin-top: 10px;
+    /*上边距*/
+}
+
+
+.d22 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色渐变*/
+    display: flex;
+    /*设置为弹性盒子*/
+    flex: 1;
+    /*使盒子铺满剩余位置*/
+    margin-left: 10px;
+    /*左边距*/
+    margin-right: 10px;
+    /*右边距*/
+    font-size: 10px;
+    /*字体大小*/
+    color: white;
+    /*内容颜色*/
+    
+}
+
+.d221 {
+    text-align: center;
+    /*内容水平居中*/
+}
+
+.d23 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色渐变*/
+    width: 20%;
+    /*盒子宽度*/
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: column;
+    /*盒子内排列方向*/
+    /*'column'为竖向排列*/
+    text-align: center;
+    /*内容水平居中*/
+    font-size: 30px;
+}
+
+.d231,
+.d232,
+.d233 {
+    margin-top: 10px;
+    /*上边距*/
+}
+
+.d3 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色*/
+    height: 100px;
+    /*盒子高度*/
+}
+    </style>
+    <script src="js/mys.js"></script>
+</head>
+
+<body>
+
+    <button style="
+            width: 100%;
+            border-style: none;
+            color:white;
+            background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+            background-position: 100% 0;
+            animation: bgSize 3s infinite ease-in-out alternate;
+            height: 120px;
+            font-size: 60px;
+            margin-bottom: 10px;">TXT</button>
+    <!--上栏-->
+
+
+    </div>
+    <!--主页面-->
+    <div class="d2">
+        <!--左侧边栏-->
+        <div class="d21">
+            <div class="d211">
+                <a href="笔记/">笔记</a>
+            </div>
+            <div class="d212">
+                <a href="图/">图库</a>
+            </div>
+            <div class="d213">
+                <a href=""></a>
+            </div>
+        </div>
+        <!--主页面-->
+        <div class="d22">
+            <div>
+            <a href="qjj.html">
+                君不见黄河之水天上来，奔流到海不复回。<br>
+                君不见高堂明镜悲白发，朝如青丝暮成雪。<br>
+                人生得意须尽欢，莫使金樽空对月。<br>
+                天生我材必有用，千金散尽还复来。<br>
+                烹羊宰牛且为乐，会须一饮三百杯。<br>
+                岑夫子，丹丘生，将进酒，杯莫停。<br>
+                与君歌一曲，请君为我倾耳听。<br>
+                钟鼓馔玉不足贵，但愿长醉不愿醒。<br>
+                古来圣贤皆寂寞，惟有饮者留其名。<br>
+                陈王昔时宴平乐，斗酒十千恣欢谑。<br>
+                主人何为言少钱，径须沽取对君酌。<br>
+                五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。<br>
+            </a></div>
+            <div><img src=""></div>
+        </div>
+        <!--右侧边栏-->
+        <div class="d23">
+            <div class="231">
+                <a href="https://www.runoob.com/" target="_blank"><img
+                        src="https://www.runoob.com/try/demo_source/logo.png" alt="菜鸟教程" height="30px" width="50"></a>
+            </div>
+            <div class="232">
+                <a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web"
+                    target="_blank">MDN</a>
+            </div>
+            <div class="233">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+    <!--下栏-->
+    <div class="d3"></div>
+</body>
+
+</html>
