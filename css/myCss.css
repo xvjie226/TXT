@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: column;
+    /*盒子内排列方向*/
+    /*'column'为竖向排列*/
+    background-color: aqua;
+    background-position: 100% 0;
+    animation: bodySize 3s infinite ease-in-out alternate;
+    /*盒子背景颜色*/
+    flex: 1;
+}
+
+a {
+    color: white;
+    /*内容颜色*/
+    text-decoration: none;
+    /*去除'a'标签内容的下划线*/
+    font-size: 30px;
+    /*设置字体*/
+}
+
+@keyframes bgSize {
+    0% {
+        background-size: 300% 100%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes bgposition {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes bodySize {
+    0% {
+        background-color: #00ff84;
+    }
+
+    100% {
+        background-color: rgb(0, 60, 255);
+    }
+}
+
+.d2 {
+    background-color: rgba(0, 0, 0, 0.0);
+    /*背景颜色*/
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: row;
+    /*盒子内排列方向*/
+    /*'row'为横向*/
+    height: 1000px;
+    /*盒子高度*/
+    margin-bottom: 10px;
+    /*下边距*/
+    text-align: center;
+    /*内容水平居中*/
+}
+
+.d21 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色渐变*/
+    width: 20%;
+    /*盒子宽度*/
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: column;
+    /*盒子内排列方向*/
+    /*'column'为竖向排列*/
+}
+
+.d211,
+.d212,
+.d213 {
+    margin-top: 10px;
+    /*上边距*/
+}
+
+
+.d22 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色渐变*/
+    display: flex;
+    /*设置为弹性盒子*/
+    flex: 1;
+    /*使盒子铺满剩余位置*/
+    margin-left: 10px;
+    /*左边距*/
+    margin-right: 10px;
+    /*右边距*/
+    font-size: 30px;
+    /*字体大小*/
+    color: white;
+    /*内容颜色*/
+    text-align: center;
+    /*内容水平居中*/
+}
+
+.d221 {
+    text-align: center;
+    /*内容水平居中*/
+}
+
+.d23 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色渐变*/
+    width: 20%;
+    /*盒子宽度*/
+    display: flex;
+    /*设置为弹性盒子属性*/
+    flex-direction: column;
+    /*盒子内排列方向*/
+    /*'column'为竖向排列*/
+    text-align: center;
+    /*内容水平居中*/
+}
+
+.d231,
+.d232,
+.d233 {
+    margin-top: 10px;
+    /*上边距*/
+}
+
+.d3 {
+    background: linear-gradient(to bottom right, rgb(0, 60, 255) 0%, #00ff84 100%);
+    background-position: 100% 0;
+    animation: bgSize 3s infinite ease-in-out alternate;
+    /*背景颜色*/
+    height: 100px;
+    /*盒子高度*/
+}
